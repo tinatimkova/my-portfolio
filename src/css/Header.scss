@@ -1,3 +1,13 @@
-.header {
-  // height: 50px;
+.header-item {
+  background-color: #333;
+  color: white;
+  margin: 0;
+  padding: 0 0.5rem;
+}
+
+.is-current {
+  background-color: white;
+  color: #333;
+  margin: 0;
+  padding: 0 0.5rem;
 }

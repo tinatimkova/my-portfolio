@@ -1,26 +1,32 @@
 import React from 'react'
+import Scrollspy from 'react-scrollspy'
+import $ from 'jquery'
 
-const Header = () => (
-  <div className="fixed-top d-flex bg-success justify-content-around">
-    <a href="#about-me">
-      <h1 className="bg-dark text-light m-0">About Me</h1>
-    </a>
-    <a href="#skills">
-      <h1 className="bg-dark text-light m-0">Skills</h1>
-    </a>
-    <a href="#projects">
-      <h1 className="bg-dark text-light m-0">Projects</h1>
-    </a>
-    <a href="#code">
-      <h1 className="bg-dark text-light m-0">Code</h1>
-    </a>
-    <a href="#resume">
-      <h1 className="bg-dark text-light m-0">Resume</h1>
-    </a>
-    <a href="#contact">
-      <h1 className="bg-dark text-light m-0">Contact</h1>
-    </a>
-  </div>
-)
+const Header = () => {
+  const sections = 'about-me skills projects code resume contact'.split(' ')
+  const sectionsText = ['About Me', 'Skills', 'Projects', 'Code', 'Resume', 'Contact']
+
+  const scrollSpyClassName = 'fixed-top d-flex bg-success justify-content-around'
+  const anchorTagClassName = 'header-item'
+
+  const scrollTo = element => $('html,body').animate({ scrollTop: $(`${element}`).offset().top }, 250)
+
+  const handleClick = () => scrollTo(event.target.getAttribute('href'))
+
+  return (
+    <Scrollspy items={sections}
+      currentClassName="is-current"
+      className={scrollSpyClassName}>
+      {sections.map((section, index) => (
+        <a key={index}
+          href={`#${section}`}
+          className={anchorTagClassName}
+          onClick={handleClick}>
+          <h1 href={`#${section}`}>{sectionsText[index]}</h1>
+        </a>
+      ))}
+    </Scrollspy>
+  )
+}
 
 export default Header
