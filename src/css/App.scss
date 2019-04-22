@@ -1,3 +1,11 @@
 .section {
   padding-top: 50px;
+  max-width: 80%;
+  text-align: justify;
+}
+
+#sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

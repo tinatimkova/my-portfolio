@@ -16,12 +16,14 @@ class App extends Component {
         <Header />
         <Background />
 
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <Code />
-        <Resume />
-        <Contact />
+        <div id="sections">
+          <AboutMe />
+          <Skills />
+          <Projects />
+          <Code />
+          <Resume />
+          <Contact />
+        </div>
 
       </Fragment>
     )
