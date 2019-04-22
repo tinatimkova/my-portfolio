@@ -1,37 +1,26 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
-import './Header.scss'
-
-const authenticatedOptions = (
-  <React.Fragment>
-    <Link to="/change-password">Change Password</Link>
-    <Link to="/sign-out">Sign Out</Link>
-  </React.Fragment>
-)
-
-const unauthenticatedOptions = (
-  <React.Fragment>
-    <Link to="/sign-up">Sign Up</Link>
-    <Link to="/sign-in">Sign In</Link>
-  </React.Fragment>
-)
-
-const alwaysOptions = (
-  <React.Fragment>
-    <Link to="/">Home</Link>
-  </React.Fragment>
-)
-
-const Header = ({ user }) => (
-  <header className="main-header">
-    <h1>Uber, But For Taxis</h1>
-    <nav>
-      { user && <span>Welcome, {user.email}</span>}
-      { user ? authenticatedOptions : unauthenticatedOptions }
-      { alwaysOptions }
-    </nav>
-  </header>
+const Header = () => (
+  <div className="fixed-top d-flex bg-success justify-content-around">
+    <a href="#about-me">
+      <h1 className="bg-dark text-light m-0">About Me</h1>
+    </a>
+    <a href="#skills">
+      <h1 className="bg-dark text-light m-0">Skills</h1>
+    </a>
+    <a href="#projects">
+      <h1 className="bg-dark text-light m-0">Projects</h1>
+    </a>
+    <a href="#code">
+      <h1 className="bg-dark text-light m-0">Code</h1>
+    </a>
+    <a href="#resume">
+      <h1 className="bg-dark text-light m-0">Resume</h1>
+    </a>
+    <a href="#contact">
+      <h1 className="bg-dark text-light m-0">Contact</h1>
+    </a>
+  </div>
 )
 
 export default Header
