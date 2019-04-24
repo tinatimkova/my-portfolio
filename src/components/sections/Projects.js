@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import video from '../../videos/video-0.webm'
 import $ from 'jquery'
-import { projects } from './ProjectData'
+import { projects } from './ProjectsData'
 
 class Projects extends Component {
   handleMouseEnter = function () { $('video', this)[0].play() }

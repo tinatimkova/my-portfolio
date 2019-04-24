@@ -1,0 +1,10 @@
+.img-resume {
+  background-color: black;
+  width: 75%;
+  height: 75%;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 2rem 2rem rgba(0,0,0,0.75);
+  }
+}

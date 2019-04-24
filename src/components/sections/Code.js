@@ -12,6 +12,7 @@ class Code extends Component {
     return (
       <div id="code" className="section">
         <h1 className="section-title">Code Samples</h1>
+        <h3>{codeTicTacToe.title}</h3>
         <PrismCode component="pre" className="language-javascript break">{codeTicTacToe.code}</PrismCode>
       </div>
     )
