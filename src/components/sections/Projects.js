@@ -1,18 +1,36 @@
 import React, { Component } from 'react'
+import video from '../../videos/video-0.webm'
+import $ from 'jquery'
+import { projects } from './ProjectData'
 
 class Projects extends Component {
+  handleMouseEnter = function () { $('video', this)[0].play() }
+  // handleMouseLeave = function () { $('video', this)[0].pause() }
+
+  renderProject = ({ focus, title, tags, deployed, repo, description }, index) => (
+    <div className="project" key={index + focus}>
+      <h3>{title}</h3>
+      <h4>Focus: {focus}</h4>
+
+      <div className="project-info">
+        <div className="d-flex flex-column col-6">
+          <div className="d-flex flex-wrap">
+            {tags.split(' ').map((tag, index) => <p key={index} className="bg-dark text-light mx-1 px-2 py-1 rounded">{tag}</p>)}
+          </div>
+          {description.map((item, index) => <p key={index} className="mb-1">{item}</p>)}
+        </div>
+        <div className="col-6">
+          <video src={video} onMouseEnter={this.handleMouseEnter} controls loop />
+        </div>
+      </div>
+    </div>
+
+  )
   render () {
     return (
       <div id="projects" className="section">
-        <h1>Projects</h1>
-        <h3>
-        Jowl venison pancetta biltong, tail shank tongue capicola shoulder. Corned beef venison tri-tip landjaeger sausage hamburger frankfurter brisket sirloin shoulder. Ham hock tenderloin cupim beef corned beef pig porchetta pork sirloin sausage andouille burgdoggen alcatra. Alcatra leberkas kevin pancetta swine, bresaola sausage chicken frankfurter tongue pork cupim andouille biltong beef ribs. Landjaeger capicola biltong pastrami, fatback tri-tip leberkas picanha swine shankle burgdoggen. Cow chuck meatloaf salami cupim short loin capicola flank ground round biltong rump tri-tip tenderloin jowl.
-
-        Shoulder short loin turkey t-bone meatball jerky. Cow hamburger frankfurter leberkas brisket picanha pastrami. Ham rump ball tip andouille tongue kevin, kielbasa pork. Cupim burgdoggen pastrami rump. Beef shoulder bacon beef ribs chicken burgdoggen sausage turkey landjaeger rump porchetta. Salami chicken cupim strip steak drumstick, flank jowl t-bone. Corned beef landjaeger cow chicken cupim hamburger ribeye frankfurter shank kevin jowl swine ham hock.
-
-        Jowl venison pancetta biltong, tail shank tongue capicola shoulder. Corned beef venison tri-tip landjaeger sausage hamburger frankfurter brisket sirloin shoulder. Ham hock tenderloin cupim beef corned beef pig porchetta pork sirloin sausage andouille burgdoggen alcatra. Alcatra leberkas kevin pancetta swine, bresaola sausage chicken frankfurter tongue pork cupim andouille biltong beef ribs. Landjaeger capicola biltong pastrami, fatback tri-tip leberkas picanha swine shankle burgdoggen. Cow chuck meatloaf salami cupim short loin capicola flank ground round biltong rump tri-tip tenderloin jowl.
-
-        Shoulder short loin turkey t-bone meatball jerky. Cow hamburger frankfurter leberkas brisket picanha pastrami. Ham rump ball tip andouille tongue kevin, kielbasa pork. Cupim burgdoggen pastrami rump. Beef shoulder bacon beef ribs chicken burgdoggen sausage turkey landjaeger rump porchetta. Salami chicken cupim strip steak drumstick, flank jowl t-bone. Corned beef landjaeger cow chicken cupim hamburger ribeye frankfurter shank kevin jowl swine ham hock.</h3>
+        <h1 className="section-title">Projects</h1>
+        {projects.map((project, index) => this.renderProject(project, index))}
       </div>
     )
   }

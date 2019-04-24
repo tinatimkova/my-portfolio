@@ -1,13 +1,41 @@
 import React, { Component } from 'react'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+import Tooltip from 'react-bootstrap/Tooltip'
+import { skills, technologies, languages } from './SkillsData'
 
 class Skills extends Component {
+  renderIcons = items => {
+    return items.map((item, index) => (
+      <OverlayTrigger
+        key={index}
+        placement='top'
+        overlay={<Tooltip id={`tooltip-${item}`}>{item.value}</Tooltip>}
+      >
+
+        <i className={item.icon + ' icon mr-3'} />
+      </OverlayTrigger>
+    )
+    )
+  }
+
   render () {
     return (
-      <div id="skills" className="section">
-        <h1>Skills</h1>
-        <h2>Jowl venison pancetta biltong, tail shank tongue capicola shoulder. Corned beef venison tri-tip landjaeger sausage hamburger frankfurter brisket sirloin shoulder. Ham hock tenderloin cupim beef corned beef pig porchetta pork sirloin sausage andouille burgdoggen alcatra. Alcatra leberkas kevin pancetta swine, bresaola sausage chicken frankfurter tongue pork cupim andouille biltong beef ribs. Landjaeger capicola biltong pastrami, fatback tri-tip leberkas picanha swine shankle burgdoggen. Cow chuck meatloaf salami cupim short loin capicola flank ground round biltong rump tri-tip tenderloin jowl.
+      <div id="skills" className="section break">
+        <h1 className="section-title">Skills</h1>
+        <h1 className="text-center">Languages</h1>
+        <div className="d-flex justify-content-center flex-wrap">
+          {this.renderIcons(languages)}
+        </div>
 
-        Shoulder short loin turkey t-bone meatball jerky. Cow hamburger frankfurter leberkas brisket picanha pastrami. Ham rump ball tip andouille tongue kevin, kielbasa pork. Cupim burgdoggen pastrami rump. Beef shoulder bacon beef ribs chicken burgdoggen sausage turkey landjaeger rump porchetta. Salami chicken cupim strip steak drumstick, flank jowl t-bone. Corned beef landjaeger cow chicken cupim hamburger ribeye frankfurter shank kevin jowl swine ham hock.</h2>
+        <h1 className="text-center">Skills</h1>
+        <div className="d-flex justify-content-center flex-wrap">
+          {this.renderIcons(skills)}
+        </div>
+
+        <h1 className="text-center">Technologies</h1>
+        <div className="d-flex justify-content-center flex-wrap">
+          {this.renderIcons(technologies)}
+        </div>
       </div>
     )
   }

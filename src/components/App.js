@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react'
-// import { Route } from 'react-router-dom'
 import Header from './Header'
 import Background from './Background'
 import AboutMe from './sections/AboutMe'
