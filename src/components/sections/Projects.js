@@ -17,7 +17,9 @@ class Projects extends Component {
           <div className="d-flex flex-wrap">
             {tags.split(' ').map((tag, index) => <p key={index} className="bg-dark text-light mr-1 px-2 py-1 rounded">{tag}</p>)}
           </div>
-          {description.map((item, index) => <p key={index} className="mb-1">{item}</p>)}
+          <ul>
+            {description.map((item, index) => <li key={index} className="mb-1">{item}</li>)}
+          </ul>
         </div>
         <div className="col-6">
           <video src={video} onMouseEnter={this.handleMouseEnter} controls loop />

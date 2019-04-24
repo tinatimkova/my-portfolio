@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import src from '../../images/selfie.webp'
 
 class AboutMe extends Component {
   render () {
@@ -13,7 +14,14 @@ class AboutMe extends Component {
     return (
       <div id="about-me" className="section">
         <h1 className="section-title">My Story</h1>
-        {text.split('\n').map((paragraph, index) => <h5 key={index}><span className="mx-4"></span>{paragraph}</h5>)}
+        <div className="d-flex">
+          <div className="col-9">
+            {text.split('\n').map((paragraph, index) => <h5 key={index}><span className="mx-4"></span>{paragraph}</h5>)}
+          </div>
+          <div className="col-3">
+            <img src={src} alt="" className="selfie"/>
+          </div>
+        </div>
       </div>
     )
   }
