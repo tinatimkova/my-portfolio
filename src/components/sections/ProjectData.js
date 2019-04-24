@@ -26,12 +26,12 @@ export const projects = [
     title: 'LetterBox: A text-only social media platform for cat lovers',
     deployed: '',
     repo: '',
-    tags: 'JavaScript HTML CSS Ruby Rails Handlebars.js Agile Scrum',
+    tags: 'JavaScript HTML CSS Ruby Rails Handlebars.js Agile Scrum Teamwork',
     description: [
       'Many One to Many Relationships',
       'Model View Controller',
-      'Serialize nested associations',
-      'Custom routes and custom serializers'
+      'Completed project within 3 business days',
+      'Bonus Features: Search, Like Resource, Card Collapse'
     ]
   },
   {

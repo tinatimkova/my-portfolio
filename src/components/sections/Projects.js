@@ -13,9 +13,9 @@ class Projects extends Component {
       <h4>Focus: {focus}</h4>
 
       <div className="project-info">
-        <div className="d-flex flex-column col-6">
+        <div className="d-flex flex-column col-6 p-0">
           <div className="d-flex flex-wrap">
-            {tags.split(' ').map((tag, index) => <p key={index} className="bg-dark text-light mx-1 px-2 py-1 rounded">{tag}</p>)}
+            {tags.split(' ').map((tag, index) => <p key={index} className="bg-dark text-light mr-1 px-2 py-1 rounded">{tag}</p>)}
           </div>
           {description.map((item, index) => <p key={index} className="mb-1">{item}</p>)}
         </div>
