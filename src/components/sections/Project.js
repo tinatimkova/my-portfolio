@@ -25,7 +25,7 @@ export const Project = ({ project }) => {
   </Fragment>
 
   return (
-    <div className="project" key={title + deployed}>
+    <div className="project animated fadeIn" key={title + deployed}>
       <h3 className="mt-1">{title}</h3>
       <h4>Focus: {focus}</h4>
 

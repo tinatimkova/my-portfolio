@@ -7,15 +7,38 @@ class Projects extends Component {
     super()
 
     this.state = {
-      popular: 'React.js Rails Algorithms'
+      tags: 'Filter by tags: , Animations, jQuery, Rails, Algorithms, Express.js'.split(','),
+      focusedTag: ''
     }
   }
 
+  handleClick = () => {
+    console.log(event)
+    this.setState({ focusedTag: event.target.textContent })
+  }
+
+  filterProjects = projects => {
+    const { focusedTag } = this.state
+
+    if (focusedTag === 'Filter by tags: ') { return this.allProjects(projects) }
+
+    return projects.filter(project => project.tags.includes(focusedTag)).map(project => <Project key={project + Math.random()} project={project} />)
+  }
+
+  allProjects = projects => {
+    return projects.map(project => <Project key={project + Math.random()} project={project} />)
+  }
+
   render () {
+    console.log(this.state)
+    const { tags, focusedTag } = this.state
+    const button = tag => <button key={tag + Math.random()} className="btn btn-warning mx-2" onClick={this.handleClick}>{tag}</button>
+
     return (
       <div id="projects" className="section">
         <h1 className="section-title">Projects</h1>
-        {projects.map(project => <Project key={project} project={project} />)}
+        <div className="d-flex justify-content-center">{tags.map(button)}</div>
+        {focusedTag ? this.filterProjects(projects) : this.allProjects(projects)}
       </div>
     )
   }
