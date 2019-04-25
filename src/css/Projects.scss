@@ -12,3 +12,29 @@
   padding: 2rem 0;
   border-bottom: 1px solid black;
 }
+// btn btn-warning mx-2
+
+.btn-tag {
+  background-color: #ffc107;
+  padding: 0.25rem 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: #ffff10;
+  }
+}
+
+.btn-tag-active {
+  background-color: #ff1110;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: #ff7710;
+  }
+}

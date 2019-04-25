@@ -13,6 +13,7 @@ class Projects extends Component {
   }
 
   handleClick = () => {
+    Array.from(document.querySelector('.btn-tag')).forEach(element => element.classList.remove('btn-tag-active'))
     this.setState({ focusedTag: event.target.textContent })
   }
 
@@ -24,13 +25,17 @@ class Projects extends Component {
     return projects.filter(project => project.tags.includes(focusedTag)).map(project => <Project key={project + Math.random()} project={project} />)
   }
 
-  allProjects = projects => {
-    return projects.map(project => <Project key={project + Math.random()} project={project} />)
-  }
+  allProjects = projects => projects.map(project => <Project key={project + Math.random()} project={project} />)
 
   render () {
     const { tags, focusedTag } = this.state
-    const button = tag => <button key={tag + Math.random()} className="btn btn-warning mx-2" onClick={this.handleClick}>{tag}</button>
+    const button = tag => (
+      <button key={tag + Math.random()}
+        className={focusedTag === tag ? 'btn-tag-active' : 'btn-tag'}
+        onClick={this.handleClick}>
+        {tag}
+      </button>
+    )
 
     return (
       <div id="projects" className="section">
