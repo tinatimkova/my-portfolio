@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import video from '../../videos/video-0.webm'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+import Tooltip from 'react-bootstrap/Tooltip'
 
 class Video extends Component {
   constructor () {
@@ -26,10 +27,15 @@ class Video extends Component {
   pause () { event.target.pause() }
 
   render () {
+    const { video } = this.props
     return (
+      <OverlayTrigger
+        placement='top'
+        overlay={<Tooltip>Click on the picture to play/pause the video</Tooltip>}
+      >
 
-      <video src={video} onClick={this.handleClick} />
-
+        <video className="hover-shadow mb-5" src={video} onClick={this.handleClick} />
+      </OverlayTrigger>
     )
   }
 }

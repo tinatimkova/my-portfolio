@@ -17,12 +17,13 @@ class Contact extends Component {
       <div id="contact" className="section">
         <div className="full-page">
           <h1 className="section-title mb-0">Contact Me</h1>
-          <h3 className="text-center break mt-5">{text}</h3>
+          <div className="d-flex flex-column justify-content-around h-100 bg-dark text-light">
+            <h3 className="text-center break mt-5">{text}</h3>
+            <div id="contact-me-icons" className="d-flex justify-content-around">
+              {icons.map(this.renderIcons)}
+            </div>
 
-          <div id="contact-me-icons" className="d-flex justify-content-around mt-auto">
-            {icons.map(this.renderIcons)}
           </div>
-
         </div>
       </div>
     )

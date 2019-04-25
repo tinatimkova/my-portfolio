@@ -1,9 +1,16 @@
+import video0 from '../../videos/video-0.webm'
+import video1 from '../../videos/video-1.webm'
+import video2 from '../../videos/video-2.webm'
+// import video3 from '../../videos/video-3.webm'
+import video4 from '../../videos/video-4.webm'
+
 export const projects = [
   {
     focus: 'Mobile/Responsive Design',
     title: 'Tic-Tac-Toe',
     deployed: 'https://davidholyko.github.io/dko-tic-tac-toe-client',
     repo: 'https://github.com/davidholyko/dko-tic-tac-toe-client',
+    video: video0,
     tags: 'Mobile-Design Responsive-Design JavaScript HTML CSS jQuery Bootstrap Algorithms Ruby Rails Logic',
     description: [
       'Bootstrap Mobile Friendly, Responsive',
@@ -17,6 +24,7 @@ export const projects = [
     title: 'Portfolio',
     deployed: 'https://davidholyko.github.io/davidholyko.github.io-deprecated',
     repo: 'https://github.com/davidholyko/davidholyko.github.io-deprecated',
+    video: video1,
     tags: 'JavaScript HTML CSS jQuery Bootstrap Animations Animate.css Keyframes Handlebars.js Moment.js',
     description: [
       'Utilizes Bootstrap Carousel, Tooltip, Card, Collapse, Modal, Scrollspy',
@@ -29,33 +37,36 @@ export const projects = [
     title: 'LetterBox: A text-only social media platform for cat lovers',
     deployed: 'https://m-d-h-s.github.io/mdhs-blog-frontend',
     repo: 'https://github.com/m-d-h-s/mdhs-blog-frontend',
+    video: video2,
     tags: 'JavaScript HTML CSS Ruby Rails Handlebars.js Agile Scrum Teamwork',
     description: [
       'Many One to Many Relationships',
       'Coordinated with team using Agile methods',
-      'Completed code reviews and standups beginning of business day, mid-business day, and pre day end',
+      'Collaborated with team to review code and do standups',
       'Completed project within 3 business days',
       'Bonus Features: Search, Like Resource, Card Collapse'
     ]
   },
-  {
-    focus: 'Back End Features',
-    title: 'StackOverKo',
-    deployed: 'https://davidholyko.github.io/stackoverko-client',
-    repo: 'https://github.com/davidholyko/stackoverko-client',
-    tags: 'JavaScript HTML CSS Ruby Rails React.js',
-    description: [
-      'Many One to Many Relationships',
-      'Model View Controller',
-      'Serialize nested associations',
-      'Custom routes and custom serializers'
-    ]
-  },
+  // {
+  //   focus: 'Back End Features',
+  //   title: 'StackOverKo',
+  //   deployed: 'https://davidholyko.github.io/stackoverko-client',
+  //   repo: 'https://github.com/davidholyko/stackoverko-client',
+  //   video: video3
+  //   tags: 'JavaScript HTML CSS Ruby Rails React.js',
+  //   description: [
+  //     'Many One to Many Relationships',
+  //     'Model View Controller',
+  //     'Serialize nested associations',
+  //     'Custom routes and custom serializers'
+  //   ]
+  // },
   {
     focus: 'Front End Features',
-    title: 'Brain Age',
+    title: 'Brain Age: Train Your Brain in Minutes a Day!',
     deployed: 'https://davidholyko.github.io/dko-brain-age-front-end',
     repo: 'https://github.com/davidholyko/dko-brain-age-front-end',
+    video: video4,
     tags: 'Logic Puzzle JavaScript HTML CSS jQuery Bootstrap Algorithms Ruby Rails Graph Handlebars.js',
     description: [
       'Game inspired by Brain Age for the Nintendo DS',

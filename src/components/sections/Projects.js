@@ -27,7 +27,7 @@ class Projects extends Component {
   play () { event.target.play() }
   pause () { event.target.pause() }
 
-  renderProject = ({ focus, title, tags, deployed, repo, description }, index) => (
+  renderProject = ({ focus, title, tags, deployed, repo, description, video }, index) => (
     <div className="project" key={index + focus}>
       <h3>{title}</h3>
       <h4>Focus: {focus}</h4>
@@ -42,7 +42,7 @@ class Projects extends Component {
           </ul>
         </div>
         <div className="col-6">
-          <Video />
+          <Video video={video}/>
           <div className="d-flex justify-content-around">
             <button className="btn btn-info">
               <a className="no-decoration" href={repo} target="_blank" rel="noopener noreferrer" >
