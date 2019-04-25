@@ -13,6 +13,7 @@
     "dotenv": "4.0.0",
     "dotenv-expand": "4.2.0",
     "fs-extra": "3.0.1",
+    "gh-pages": "^2.0.1",
     "jquery": "^3.4.0",
     "object-assign": "4.1.1",
     "prismjs": "^1.16.0",
