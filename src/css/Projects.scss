@@ -8,7 +8,7 @@
   flex-direction: row;
 }
 
-.project {
+#projects > .project:not(:last-child) {
   padding: 2rem 0;
   border-bottom: 1px solid black;
 }

@@ -29,7 +29,7 @@ class Projects extends Component {
 
   renderProject = ({ focus, title, tags, deployed, repo, description, video }, index) => (
     <div className="project" key={index + focus}>
-      <h3>{title}</h3>
+      <h3 className="mt-1">{title}</h3>
       <h4>Focus: {focus}</h4>
 
       <div className="project-info">

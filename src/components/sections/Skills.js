@@ -12,7 +12,7 @@ class Skills extends Component {
         overlay={<Tooltip id={`tooltip-${item}`}>{item.value}</Tooltip>}
       >
 
-        <i className={item.icon + ' icon mr-3'} />
+        <i className={item.icon + ' icon'} />
       </OverlayTrigger>
     )
     )

@@ -6,8 +6,8 @@ import video4 from '../../videos/video-4.webm'
 
 export const projects = [
   {
-    focus: 'Mobile/Responsive Design',
     title: 'Tic-Tac-Toe',
+    focus: 'Mobile/Responsive Design',
     deployed: 'https://davidholyko.github.io/dko-tic-tac-toe-client',
     repo: 'https://github.com/davidholyko/dko-tic-tac-toe-client',
     video: video0,
@@ -20,8 +20,8 @@ export const projects = [
     ]
   },
   {
-    focus: 'CSS Animations, Bootstrap Components, and Styling',
     title: 'Portfolio',
+    focus: 'CSS Animations, Bootstrap Components, and Styling',
     deployed: 'https://davidholyko.github.io/davidholyko.github.io-deprecated',
     repo: 'https://github.com/davidholyko/davidholyko.github.io-deprecated',
     video: video1,
@@ -33,8 +33,8 @@ export const projects = [
     ]
   },
   {
-    focus: 'Team Project',
     title: 'LetterBox: A text-only social media platform for cat lovers',
+    focus: 'Teamwork and Collaboration',
     deployed: 'https://m-d-h-s.github.io/mdhs-blog-frontend',
     repo: 'https://github.com/m-d-h-s/mdhs-blog-frontend',
     video: video2,
@@ -48,8 +48,8 @@ export const projects = [
     ]
   },
   // {
-  //   focus: 'Back End Features',
   //   title: 'StackOverKo',
+  //   focus: 'Back End Features',
   //   deployed: 'https://davidholyko.github.io/stackoverko-client',
   //   repo: 'https://github.com/davidholyko/stackoverko-client',
   //   video: video3
@@ -62,8 +62,8 @@ export const projects = [
   //   ]
   // },
   {
-    focus: 'Front End Features',
     title: 'Brain Age: Train Your Brain in Minutes a Day!',
+    focus: 'Front End Features',
     deployed: 'https://davidholyko.github.io/dko-brain-age-front-end',
     repo: 'https://github.com/davidholyko/dko-brain-age-front-end',
     video: video4,
