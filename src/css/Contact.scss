@@ -13,3 +13,10 @@
   display: flex;
   flex-direction: column;
 }
+
+.full-page-sub-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: calc(101%);
+}

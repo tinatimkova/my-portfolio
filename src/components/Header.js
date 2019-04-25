@@ -6,7 +6,15 @@ const Header = () => {
   const sections = 'top about-me skills projects code resume contact'.split(' ')
   const sectionsText = ['Top', 'About Me', 'Skills', 'Projects', 'Code', 'Resume', 'Contact']
 
-  const scrollTo = element => $('html,body').animate({ scrollTop: $(`${element}`).offset().top }, 250)
+  const scrollTo = element => {
+    if (element === '#top') {
+      return $('html,body').animate({ scrollTop: $(`${element}`).offset().top }, 500)
+    }
+
+    console.log(element)
+
+    $('html,body').animate({ scrollTop: $(`${element}`).offset().top + 1 }, 500)
+  }
   const handleClick = () => scrollTo(event.target.getAttribute('href'))
 
   return (

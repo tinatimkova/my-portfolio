@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { projects } from '../../data/ProjectsData'
 import { Project } from './Project'
+import { projects } from '../../data/ProjectsData'
 
 class Projects extends Component {
   constructor () {
