@@ -35,17 +35,21 @@ Add the following scripts in your package.json:
 +   "predeploy": "npm run build",
 +   "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-The predeploy script will run automatically before deploy is run.
+    "build": "react-scripts build"
+}
 ```
+
+The predeploy script will run automatically before deploy is run.
 If you are deploying to a GitHub user page instead of a project page you'll need to make one additional modification:
 
 Tweak your package.json scripts to push deployments to master:
 ```
   "scripts": {
+    ...
     "predeploy": "npm run build",
 -   "deploy": "gh-pages -d build",
 +   "deploy": "gh-pages -b master -d build"
+}
 ```
 ##### Step 3: Deploy the site by running npm run deploy
 Then run:
