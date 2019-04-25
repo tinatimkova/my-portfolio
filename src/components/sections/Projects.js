@@ -7,7 +7,7 @@ class Projects extends Component {
     super()
 
     this.state = {
-      tags: 'Filter by tags: , Animations, jQuery, Rails, Algorithms, Express.js'.split(','),
+      tags: 'Filter by tags: , jQuery, Algorithms, Animations, Rails, Express.js'.split(','),
       focusedTag: ''
     }
   }
