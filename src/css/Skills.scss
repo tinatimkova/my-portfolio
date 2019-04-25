@@ -20,6 +20,13 @@
   }
 }
 
+.skills-sub-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
 .tooltip-inner {
   background-color: rgba(0,0,0,0.9);
   color: #FFFFFF;

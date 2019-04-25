@@ -10,6 +10,12 @@
   }
 }
 
+.no-decoration {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .section {
   padding-top: 50px;
   width: 80%;
@@ -31,8 +37,4 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.full-page {
-  min-height: 100vh;
 }

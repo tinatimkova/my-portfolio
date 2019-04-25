@@ -2,8 +2,8 @@ export const projects = [
   {
     focus: 'Mobile/Responsive Design',
     title: 'Tic-Tac-Toe',
-    deployed: '',
-    repo: '',
+    deployed: 'https://davidholyko.github.io/dko-tic-tac-toe-client',
+    repo: 'https://github.com/davidholyko/dko-tic-tac-toe-client',
     tags: 'Mobile-Design Responsive-Design JavaScript HTML CSS jQuery Bootstrap Algorithms Ruby Rails Logic',
     description: [
       'Bootstrap Mobile Friendly, Responsive',
@@ -15,8 +15,8 @@ export const projects = [
   {
     focus: 'CSS Animations, Bootstrap Components, and Styling',
     title: 'Portfolio',
-    deployed: '',
-    repo: '',
+    deployed: 'https://davidholyko.github.io/davidholyko.github.io-deprecated',
+    repo: 'https://github.com/davidholyko/davidholyko.github.io-deprecated',
     tags: 'JavaScript HTML CSS jQuery Bootstrap Animations Animate.css Keyframes Handlebars.js Moment.js',
     description: [
       'Utilizes Bootstrap Carousel, Tooltip, Card, Collapse, Modal, Scrollspy',
@@ -27,8 +27,8 @@ export const projects = [
   {
     focus: 'Team Project',
     title: 'LetterBox: A text-only social media platform for cat lovers',
-    deployed: '',
-    repo: '',
+    deployed: 'https://m-d-h-s.github.io/mdhs-blog-frontend',
+    repo: 'https://github.com/m-d-h-s/mdhs-blog-frontend',
     tags: 'JavaScript HTML CSS Ruby Rails Handlebars.js Agile Scrum Teamwork',
     description: [
       'Many One to Many Relationships',
@@ -39,10 +39,23 @@ export const projects = [
     ]
   },
   {
+    focus: 'Back End Features',
+    title: 'StackOverKo',
+    deployed: 'https://davidholyko.github.io/stackoverko-client',
+    repo: 'https://github.com/davidholyko/stackoverko-client',
+    tags: 'JavaScript HTML CSS Ruby Rails React.js',
+    description: [
+      'Many One to Many Relationships',
+      'Model View Controller',
+      'Serialize nested associations',
+      'Custom routes and custom serializers'
+    ]
+  },
+  {
     focus: 'Front End Features',
     title: 'Brain Age',
-    deployed: '',
-    repo: '',
+    deployed: 'https://davidholyko.github.io/dko-brain-age-front-end',
+    repo: 'https://github.com/davidholyko/dko-brain-age-front-end',
     tags: 'Logic Puzzle JavaScript HTML CSS jQuery Bootstrap Algorithms Ruby Rails Graph Handlebars.js',
     description: [
       'Game inspired by Brain Age for the Nintendo DS',
@@ -51,19 +64,6 @@ export const projects = [
       'Multple pages effect with jQuery hide/show',
       'Completed project within 4 business days',
       'Table generated with Handlebars.js'
-    ]
-  },
-  {
-    focus: 'Back End Features',
-    title: 'StackOverKo',
-    deployed: '',
-    repo: '',
-    tags: 'JavaScript HTML CSS Ruby Rails React.js',
-    description: [
-      'Many One to Many Relationships',
-      'Model View Controller',
-      'Serialize nested associations',
-      'Custom routes and custom serializers'
     ]
   }
 ]
