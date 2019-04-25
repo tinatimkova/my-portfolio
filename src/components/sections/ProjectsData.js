@@ -37,7 +37,7 @@ export const projects = [
     focus: 'Teamwork and Collaboration',
     deployed: 'https://m-d-h-s.github.io/mdhs-blog-frontend',
     repo: 'https://github.com/m-d-h-s/mdhs-blog-frontend',
-    video: video2,
+    video: video4,
     tags: 'JavaScript HTML CSS Ruby Rails Handlebars.js Agile Scrum Teamwork',
     description: [
       'Many One to Many Relationships',
@@ -66,8 +66,8 @@ export const projects = [
     focus: 'Front End Features',
     deployed: 'https://davidholyko.github.io/dko-brain-age-front-end',
     repo: 'https://github.com/davidholyko/dko-brain-age-front-end',
-    video: video4,
-    tags: 'Logic Puzzle JavaScript HTML CSS jQuery Bootstrap Algorithms Ruby Rails Graph Handlebars.js',
+    video: video2,
+    tags: 'Logic Puzzle JavaScript HTML CSS jQuery Bootstrap Algorithms Ruby Rails Math.js Graph.js Handlebars.js',
     description: [
       'Game inspired by Brain Age for the Nintendo DS',
       'Implemented a Procedural Generation Algorithm that produces multiple choice logic',
