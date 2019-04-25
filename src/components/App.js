@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import Header from './Header'
 import Background from './Background'
 import AboutMe from './sections/AboutMe'
@@ -11,7 +11,7 @@ import Contact from './sections/Contact'
 class App extends Component {
   render () {
     return (
-      <Fragment>
+      <div id="app">
         <Header />
         <Background />
 
@@ -24,7 +24,7 @@ class App extends Component {
           <Contact />
         </div>
 
-      </Fragment>
+      </div>
     )
   }
 }

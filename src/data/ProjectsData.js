@@ -1,8 +1,8 @@
-import video0 from '../../videos/video-0.webm'
-import video1 from '../../videos/video-1.webm'
-import video2 from '../../videos/video-2.webm'
-// import video3 from '../../videos/video-3.webm'
-import video4 from '../../videos/video-4.webm'
+import video0 from '../videos/video-0.webm'
+import video1 from '../videos/video-1.webm'
+import video2 from '../videos/video-2.webm'
+// import video3 from '../videos/video-3.webm'
+import video4 from '../videos/video-4.webm'
 
 export const projects = [
   {
@@ -38,7 +38,7 @@ export const projects = [
     deployed: 'https://m-d-h-s.github.io/mdhs-blog-frontend',
     repo: 'https://github.com/m-d-h-s/mdhs-blog-frontend',
     video: video4,
-    tags: 'JavaScript HTML CSS Ruby Rails Handlebars.js Agile Scrum Teamwork',
+    tags: 'JavaScript HTML CSS Express.js Handlebars.js Agile Scrum Teamwork',
     description: [
       'Many One to Many Relationships',
       'Coordinated with team using Agile methods',

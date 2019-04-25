@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
-import { skills, technologies, languages } from './SkillsData'
+import { skills, technologies, languages } from '../../data/SkillsData'
 
 class Skills extends Component {
   renderIcons = items => {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { icons } from './ContactData'
+import { icons } from '../../data/ContactData'
 
 class Contact extends Component {
   renderIcons = ({ href, src }) => (
@@ -17,7 +17,7 @@ class Contact extends Component {
       <div id="contact" className="section">
         <div className="full-page">
           <h1 className="section-title mb-0">Contact Me</h1>
-          <div className="d-flex flex-column justify-content-around h-100 bg-dark text-light">
+          <div className="d-flex flex-column justify-content-around h-100">
             <h3 className="text-center break mt-5">{text}</h3>
             <div id="contact-me-icons" className="d-flex justify-content-around">
               {icons.map(this.renderIcons)}
