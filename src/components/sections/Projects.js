@@ -13,7 +13,6 @@ class Projects extends Component {
   }
 
   handleClick = () => {
-    console.log(event)
     this.setState({ focusedTag: event.target.textContent })
   }
 
@@ -30,7 +29,6 @@ class Projects extends Component {
   }
 
   render () {
-    console.log(this.state)
     const { tags, focusedTag } = this.state
     const button = tag => <button key={tag + Math.random()} className="btn btn-warning mx-2" onClick={this.handleClick}>{tag}</button>
 
