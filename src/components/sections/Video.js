@@ -31,13 +31,14 @@ class Video extends Component {
     return (
       <OverlayTrigger
         placement='top'
-        overlay={<Tooltip>Click on the picture to play/pause the video</Tooltip>}
+        overlay={<Tooltip>Click to play/pause the video</Tooltip>}
       >
 
         <video
           className='hover-shadow mb-3'
           src={video}
           onClick={this.handleClick}
+          autoPlay
           loop />
       </OverlayTrigger>
     )
