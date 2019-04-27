@@ -2,10 +2,19 @@
   position: fixed;
   top: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   background-color: rgba(0,0,0,0.5);
   z-index: 10;
   width: 100vw;
+  padding: 0 25px;
+
+  & > * {
+    margin-left: auto;
+  }
+
+  &:first-child {
+    margin-right: auto;
+  }
 }
 
 .header-item {
