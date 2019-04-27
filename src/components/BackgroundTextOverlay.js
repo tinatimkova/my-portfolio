@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Typing, { Backspace } from 'react-typing-animation'
+import Typing, { Backspace, Delay } from 'react-typing-animation'
 
 class BackgroundTextOverlay extends Component {
   render () {
@@ -8,11 +8,14 @@ class BackgroundTextOverlay extends Component {
         <span className="text-large">David Ko</span>
         <Typing startDelay={1000} loop>
           <span className="text-medium">Software Engineer</span>
-          <Backspace count={17} delay={2000} />
+          <Backspace count={18} delay={2000} />
+          <Delay ms={1000}/>
           <span className="text-medium">Full Stack Web Developer</span>
-          <Backspace count={24} delay={2000} />
+          <Backspace count={25} delay={2000} />
+          <Delay ms={1000}/>
           <span className="text-medium">Diamond II Ranked Conquest in Smite</span>
-          <Backspace count={35} delay={2000}/>
+          <Backspace count={36} delay={2000} />
+          <Delay ms={1000}/>
         </Typing>
       </div>
     )
