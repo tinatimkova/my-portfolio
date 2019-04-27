@@ -1,12 +1,12 @@
-#projects > .project:nth-child(odd) > .project-info {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-#projects > .project:nth-child(even) > .project-info {
-  display: flex;
-  flex-direction: row;
-}
+// #projects > .project:nth-child(odd) > .project-info {
+//   display: flex;
+//   flex-direction: row-reverse;
+// }
+//
+// #projects > .project:nth-child(even) > .project-info {
+//   display: flex;
+//   flex-direction: row;
+// }
 
 #projects > .project:not(:last-child) {
   padding: 2rem 0;
@@ -24,6 +24,10 @@
   &:hover {
     background-color: #ffff10;
   }
+}
+
+.project-info {
+  display: flex;
 }
 
 .btn-tag-active {

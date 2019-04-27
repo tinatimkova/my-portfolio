@@ -4,11 +4,13 @@ import Background from './Background'
 import AboutMe from './sections/AboutMe'
 import Skills from './sections/Skills'
 import Projects from './sections/Projects'
-import Code from './sections/Code'
-import Resume from './sections/Resume'
+// import Code from './sections/Code'
+// import Resume from './sections/Resume'
 import Contact from './sections/Contact'
 
 class App extends Component {
+  // <Code />
+  // <Resume />
   render () {
     return (
       <div id="app">
@@ -19,8 +21,6 @@ class App extends Component {
           <AboutMe />
           <Skills />
           <Projects />
-          <Code />
-          <Resume />
           <Contact />
         </div>
 

@@ -3,8 +3,8 @@ import Scrollspy from 'react-scrollspy'
 import $ from 'jquery'
 
 const Header = () => {
-  const sections = 'top about-me skills projects code resume contact'.split(' ')
-  const sectionsText = ['Top', 'About Me', 'Skills', 'Projects', 'Code', 'Resume', 'Contact']
+  const sections = 'top about-me skills projects contact'.split(' ')
+  const sectionsText = ['Top', 'About Me', 'Skills', 'Projects', 'Contact']
 
   const scrollTo = element => {
     if (element === '#top') {
@@ -19,16 +19,14 @@ const Header = () => {
 
   return (
     <Scrollspy items={sections} currentClassName="is-current" className='header'>
-
       {sections.map((section, index) => (
         <a key={index}
           href={`#${section}`}
           className='header-item'
           onClick={handleClick}>
-          <h1 className="header-item-text" href={`#${section}`}>{sectionsText[index]}</h1>
+          <h3 className="header-item-text" href={`#${section}`}>{sectionsText[index]}</h3>
         </a>
       ))}
-
     </Scrollspy>
   )
 }
