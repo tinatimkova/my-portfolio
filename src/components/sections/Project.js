@@ -29,7 +29,10 @@ export const Project = ({ project }) => {
       <div className="d-flex">
         <h3 className="mt-1 text-success font-weight-bold pr-2">{title}</h3>
       </div>
-      <h4 className="font-italic">Focus: {focus}</h4>
+      <h4>
+        <span>Focused on: </span>
+        <span className="font-italic">{focus}</span>
+      </h4>
 
       <div className="project-info">
         <div className="d-flex flex-column col-6 p-0">
