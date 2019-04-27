@@ -65,7 +65,7 @@ export const projects = [
     deployed: 'https://davidholyko.github.io/dko-brain-age-front-end',
     repo: 'https://github.com/davidholyko/dko-brain-age-front-end',
     video: video2,
-    tags: 'Algorithms, Ruby on Rails, PostgreSQL, Graph.js, Handlebars.js Animations',
+    tags: 'Algorithms, Ruby on Rails, PostgreSQL, Graph.js, Handlebars.js, Animations',
     description: [
       'Game inspired by Brain Age for the Nintendo DS',
       'Implemented a Procedural Generation Algorithm that produces multiple choice logic',
