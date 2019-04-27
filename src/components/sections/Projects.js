@@ -7,7 +7,7 @@ class Projects extends Component {
     super()
 
     this.state = {
-      tags: ['Filter by tags: ', 'Algorithms', 'Animations', 'Rails', 'Express.js'],
+      tags: 'Filter by tags:,Algorithms,Animations,Ruby on Rails,Express.js,Responsive-Design'.split(','),
       focusedTag: ''
     }
   }
@@ -20,7 +20,7 @@ class Projects extends Component {
   filterProjects = projects => {
     const { focusedTag } = this.state
 
-    if (focusedTag === 'Filter by tags: ') { return this.allProjects(projects) }
+    if (focusedTag === 'Filter by tags:') { return this.allProjects(projects) }
 
     return projects.filter(project => project.tags.includes(focusedTag)).map(project => <Project key={project + Math.random()} project={project} />)
   }
