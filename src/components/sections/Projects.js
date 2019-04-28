@@ -7,7 +7,7 @@ class Projects extends Component {
     super()
 
     this.state = {
-      tags: 'Filter by tags:  Algorithms  Animations  Ruby on Rails  Express.js  Responsive-Design'.split('  '),
+      tags: 'Filter by tags:  React.js  Ruby on Rails  Algorithms  Animations  Express.js  Responsive-Design'.split('  '),
       focusedTag: ''
     }
   }
@@ -42,6 +42,13 @@ class Projects extends Component {
         <h1 className="section-title">Projects</h1>
         <div className="d-flex justify-content-start flex-wrap">{tags.map(button)}</div>
         {focusedTag ? this.filterProjects(projects) : this.allProjects(projects)}
+        <a
+          className="no-decoration btn-indigo"
+          href="https://davidholyko.github.io/dko-projects"
+          target="_blank"
+          rel="noopener noreferrer">
+          <h3 className="m-0 text-light">Visit my projects page</h3>
+        </a>
       </div>
     )
   }
