@@ -7,8 +7,6 @@ import Projects from './sections/Projects'
 import Contact from './sections/Contact'
 
 class App extends Component {
-  // <Code />
-  // <Resume />
   render () {
     return (
       <div id="app">

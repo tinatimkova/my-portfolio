@@ -25,12 +25,10 @@ const Header = () => {
   const handleClick = () => scrollTo(event.target.getAttribute('href'))
 
   const generateHeaderText = (sections, className) => sections.map((section, index) => (
-    <a key={index}
-      href={`#${section.href}`}
-      className={'header-item px-2 ' + className}
-      onClick={handleClick}>
-      <h3 className="header-item-text" href={`#${section.href}`}>{section.text}</h3>
-    </a>
+    <h3 key={section + index}
+      className={'header-item-text ' + className }
+      onClick={handleClick}
+      href={`#${section.href}`}>{section.text}</h3>
   ))
 
   return (
