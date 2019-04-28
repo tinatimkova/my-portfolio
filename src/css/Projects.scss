@@ -17,7 +17,7 @@
 .btn-tag {
   background-color: #ffc107;
   padding: 0.25rem 0.5rem;
-  margin: 0 0.5rem;
+  margin: 0.1rem 0.5rem;
   border-radius: 0.25rem;
   border: 1px solid transparent;
 
@@ -28,6 +28,14 @@
 
 .project-info {
   display: flex;
+}
+// d-flex flex-column col-6 p-0
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 1rem;
 }
 
 .btn-tag-active {

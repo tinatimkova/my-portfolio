@@ -11,13 +11,13 @@ export const Project = ({ project }) => {
   const renderDescription = description.map((item, index) => <li key={index} className="mb-1">{item}</li>)
 
   const renderButtons = <Fragment>
-    <button className="btn btn-info">
+    <button className="btn btn-info mr-2">
       <a className="no-decoration" href={repo} target="_blank" rel="noopener noreferrer" >
         <span className="text-light">Github Codebase Link</span>
       </a>
     </button>
 
-    <button className="btn btn-info">
+    <button className="btn btn-info ml-2">
       <a className="no-decoration" href={deployed} target="_blank" rel="noopener noreferrer" >
         <span className="text-light">Live Demo Link</span>
       </a>
@@ -35,12 +35,13 @@ export const Project = ({ project }) => {
       </h4>
 
       <div className="project-info">
-        <div className="d-flex flex-column col-6 p-0">
+
+        <div className="project-description">
           <div className="d-flex flex-wrap">{renderTags}</div>
           <ul>{renderDescription}</ul>
         </div>
 
-        <div className="col-6">
+        <div className="project-description">
           <Video video={video}/>
           <div className="d-flex justify-content-around">{renderButtons}</div>
         </div>

@@ -11,11 +11,11 @@ class AboutMe extends Component {
     return (
       <div id="about-me" className="section">
         <h1 className="section-title">My Story</h1>
-        <div className="d-flex">
-          <div className="col-9">
+        <div className="d-flex flex-wrap">
+          <div className="col-12 col-sm-9">
             {text.split('\n').map((paragraph, index) => <p key={index} className="my-0"><span className="mx-4"></span>{paragraph}</p>)}
           </div>
-          <div className="col-3">
+          <div className="col-12 col-sm-3">
             <img src={src} alt="" className="selfie"/>
           </div>
         </div>
