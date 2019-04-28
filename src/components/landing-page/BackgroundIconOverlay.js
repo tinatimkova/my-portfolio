@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { icons } from '../data/ContactData'
+import { icons } from '../../data/ContactData'
 
 class BackgroundIconOverlay extends Component {
   render () {

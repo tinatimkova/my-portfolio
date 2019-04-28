@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
-import Header from './Header'
-import Background from './Background'
+import Header from './landing-page/Header'
+import Background from './landing-page/Background'
 import AboutMe from './sections/AboutMe'
 import Skills from './sections/Skills'
 import Projects from './sections/Projects'
-// import Code from './sections/Code'
-// import Resume from './sections/Resume'
 import Contact from './sections/Contact'
 
 class App extends Component {
@@ -14,8 +12,10 @@ class App extends Component {
   render () {
     return (
       <div id="app">
-        <Header />
-        <Background />
+        <div id="landing-page">
+          <Header />
+          <Background />
+        </div>
 
         <div id="sections">
           <AboutMe />
