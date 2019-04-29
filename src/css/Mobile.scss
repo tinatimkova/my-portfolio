@@ -29,7 +29,14 @@
   }
 
   .skills-sub-section {
-    justify-content: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & > * {
+      width: calc(100% / 3);
+      text-align: center;
+      margin: 1rem auto;
+    }
   }
 }
 @media (max-width: 880px) {
