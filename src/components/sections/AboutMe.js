@@ -11,7 +11,7 @@ class AboutMe extends Component {
     return (
       <div id="about-me" className="section">
         <h1 className="section-title">My Story</h1>
-        <div className="d-flex flex-wrap">
+        <div className="about-me-sub-section">
           <div className="col-12 col-sm-9">
             {text.split('\n').map((paragraph, index) => <p key={index} className="my-0"><span className="mx-4"></span>{paragraph}</p>)}
           </div>

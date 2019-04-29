@@ -1,18 +1,7 @@
-// #projects > .project:nth-child(odd) > .project-info {
-//   display: flex;
-//   flex-direction: row-reverse;
-// }
-//
-// #projects > .project:nth-child(even) > .project-info {
-//   display: flex;
-//   flex-direction: row;
-// }
-
 #projects > .project:not(:last-child) {
   padding: 2rem 0;
   border-bottom: 1px solid black;
 }
-// btn btn-warning mx-2
 
 .btn-tag {
   background-color: #ffc107;
@@ -29,7 +18,6 @@
 .project-info {
   display: flex;
 }
-// d-flex flex-column col-6 p-0
 
 .project-description {
   display: flex;
