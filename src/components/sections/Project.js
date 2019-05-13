@@ -11,15 +11,15 @@ export const Project = ({ project }) => {
   const renderDescription = description.map((item, index) => <li key={index} className="mb-1">{item}</li>)
 
   const renderButtons = <Fragment>
-    <button className="btn btn-info mr-2">
+    <button className="btn-green mr-2">
       <a className="no-decoration" href={repo} target="_blank" rel="noopener noreferrer" >
-        <span className="text-light">Github Codebase Link</span>
+        <span className="text-light">Codebase</span>
       </a>
     </button>
 
-    <button className="btn btn-info ml-2">
+    <button className="btn-green ml-2">
       <a className="no-decoration" href={deployed} target="_blank" rel="noopener noreferrer" >
-        <span className="text-light">Live Demo Link</span>
+        <span className="text-light">Deployment</span>
       </a>
     </button>
   </Fragment>
@@ -27,12 +27,12 @@ export const Project = ({ project }) => {
   return (
     <div className="project animated fadeIn" key={title + deployed}>
       <div className="d-flex">
-        <h3 className="mt-1 text-success font-weight-bold pr-2">{title}</h3>
+        <h3 className="project-header mt-1 font-weight-bold pr-2">{title}</h3>
       </div>
-      <h4>
+      <h5>
         <span>Focused on: </span>
         <span className="font-italic">{focus}</span>
-      </h4>
+      </h5>
 
       <div className="project-info">
 

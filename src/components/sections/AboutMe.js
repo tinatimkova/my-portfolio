@@ -12,10 +12,13 @@ class AboutMe extends Component {
       <div id="about-me" className="section">
         <h1 className="section-title">My Story</h1>
         <div className="about-me-sub-section">
-          <div className="col-12 col-sm-9">
-            {text.split('\n').map((paragraph, index) => <p key={index} className="my-0"><span className="mx-4"></span>{paragraph}</p>)}
+          <div className="col-12 col-sm-8">
+            {text.split('\n').map((paragraph, index) => (
+              <p key={index} className="my-0">{paragraph}</p>
+            )
+            )}
           </div>
-          <div className="col-12 col-sm-3">
+          <div className="col-12 col-sm-4">
             <img src={src} alt="" className="selfie"/>
           </div>
         </div>

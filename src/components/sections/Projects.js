@@ -43,7 +43,7 @@ class Projects extends Component {
         <div className="d-flex justify-content-start flex-wrap">{tags.map(button)}</div>
         {focusedTag ? this.filterProjects(projects) : this.allProjects(projects)}
         <a
-          className="no-decoration btn-indigo mt-5"
+          className="no-decoration btn-green mt-5"
           href="https://davidholyko.github.io/dko-projects"
           target="_blank"
           rel="noopener noreferrer">

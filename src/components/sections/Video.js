@@ -38,7 +38,7 @@ class Video extends Component {
           className='hover-shadow mb-3'
           src={video}
           onClick={this.handleClick}
-          autoPlay
+          controls
           loop />
       </OverlayTrigger>
     )
