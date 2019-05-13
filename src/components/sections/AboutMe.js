@@ -14,7 +14,7 @@ class AboutMe extends Component {
         <div className="about-me-sub-section">
           <div className="col-12 col-sm-8">
             {text.split('\n').map((paragraph, index) => (
-              <p key={index} className="my-0">{paragraph}</p>
+              <p key={index} className="mb-4">{paragraph}</p>
             )
             )}
           </div>
