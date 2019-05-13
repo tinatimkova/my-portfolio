@@ -66,8 +66,8 @@ export const projects = [
   {
     title: 'StackOverKo',
     focus: 'Back End Features',
-    deployed: 'https://davidholyko.github.io/stackoverko-client',
-    repo: 'https://github.com/davidholyko/stackoverko-client',
+    deployed: 'https://davidholyko.github.io/dko-stackoverko-client',
+    repo: 'https://github.com/davidholyko/dko-stackoverko-client',
     video: video3,
     tags: 'React.js, Ruby on Rails',
     description: [
