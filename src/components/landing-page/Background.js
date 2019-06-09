@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import BackgroundTextOverlay from './BackgroundTextOverlay'
-import BackgroundIconOverlay from './BackgroundIconOverlay'
-import src from '../../images/background.webp'
+import React, { Component } from 'react';
+import BackgroundTextOverlay from './BackgroundTextOverlay';
+import BackgroundIconOverlay from './BackgroundIconOverlay';
+import src from '../../images/background.webp';
 
 class Background extends Component {
   render () {
@@ -11,8 +11,8 @@ class Background extends Component {
         <BackgroundTextOverlay />
         <BackgroundIconOverlay />
       </div>
-    )
+    );
   }
 }
 
-export default Background
+export default Background;

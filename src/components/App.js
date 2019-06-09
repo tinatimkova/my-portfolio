@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import Header from './landing-page/Header'
-import Background from './landing-page/Background'
-import AboutMe from './sections/AboutMe'
-import Skills from './sections/Skills'
-import Projects from './sections/Projects'
-import Contact from './sections/Contact'
+import React, { Component } from 'react';
+import Header from './landing-page/Header';
+import Background from './landing-page/Background';
+import AboutMe from './sections/AboutMe';
+import Skills from './sections/Skills';
+import Projects from './sections/Projects';
+import Contact from './sections/Contact';
 
 class App extends Component {
   render () {
@@ -21,10 +21,9 @@ class App extends Component {
           <Projects />
           <Contact />
         </div>
-
       </div>
-    )
+    );
   }
 }
 
-export default App
+export default App;
