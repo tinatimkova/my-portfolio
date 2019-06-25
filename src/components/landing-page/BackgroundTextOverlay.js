@@ -13,9 +13,7 @@ class BackgroundTextOverlay extends Component {
           <span className="text-medium">Full Stack Web Developer</span>
           <Backspace count={25} delay={2000} />
           <Delay ms={1000} />
-          <span className="text-medium">
-						Diamond II Ranked Conquest in Smite
-          </span>
+          <span className="text-medium">Diamond Ranked ADC in Smite</span>
           <Backspace count={36} delay={2000} />
           <Delay ms={1000} />
         </Typing>
