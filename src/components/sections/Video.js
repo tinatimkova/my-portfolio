@@ -11,42 +11,42 @@ class Video extends Component {
     };
   }
 
-	handleClick = () => {
-	  const { isPlaying } = this.state;
+  handleClick = () => {
+    const { isPlaying } = this.state;
 
-	  if (!isPlaying) {
-	    this.play();
-	    this.setState({ isPlaying: !isPlaying });
-	  } else {
-	    this.pause();
-	    this.setState({ isPlaying: !isPlaying });
-	  }
-	};
+    if (!isPlaying) {
+      this.play();
+      this.setState({ isPlaying: !isPlaying });
+    } else {
+      this.pause();
+      this.setState({ isPlaying: !isPlaying });
+    }
+  };
 
-	play () {
-	  event.target.play();
-	}
-	pause () {
-	  event.target.pause();
-	}
+  play () {
+    event.target.play();
+  }
+  pause () {
+    event.target.pause();
+  }
 
-	render () {
-	  const { video } = this.props;
-	  return (
-	    <OverlayTrigger
-	      placement="top"
-	      overlay={<Tooltip>Click to play/pause the video</Tooltip>}
-	    >
-	      <video
-	        className="hover-shadow mb-3"
-	        src={video}
-	        onClick={this.handleClick}
-	        controls
-	        loop
-	      />
-	    </OverlayTrigger>
-	  );
-	}
+  render () {
+    const { video } = this.props;
+    return (
+      <OverlayTrigger
+        placement="top"
+        overlay={<Tooltip>Click to play/pause the video</Tooltip>}
+      >
+        <video
+          className="hover-shadow mb-3"
+          src={video}
+          onClick={this.handleClick}
+          controls
+          loop
+        />
+      </OverlayTrigger>
+    );
+  }
 }
 
 export default Video;

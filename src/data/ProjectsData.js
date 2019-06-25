@@ -55,7 +55,7 @@ export const projects = [
     repo: 'https://github.com/davidholyko/dko-brain-age-front-end',
     video: video2,
     tags:
-			'Algorithms, Ruby on Rails, PostgreSQL, Graph.js, Handlebars.js, Animations',
+      'Algorithms, Ruby on Rails, PostgreSQL, Graph.js, Handlebars.js, Animations',
     description: [
       'Full Stack Application inspired by Brain Age for the Nintendo DS',
       'Project sprint duration: 4 business days',
