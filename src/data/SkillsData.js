@@ -35,7 +35,7 @@ export const skills = [
     value: 'Ruby on Rails',
   },
   {
-    icon: 'devicon-express-original colore',
+    icon: 'devicon-express-original colored',
     value: 'Express.js',
   },
   {
@@ -62,7 +62,7 @@ export const technologies = [
     value: 'Heroku',
   },
   {
-    icon: 'devicon-amazonwebservices-original colore',
+    icon: 'devicon-amazonwebservices-original colored',
     value: 'Amazon Web Services',
   },
   {
