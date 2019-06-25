@@ -1,8 +1,6 @@
-export const codeTicTacToe =
-{
+export const codeTicTacToe = {
   title: 'Tic-Tac-Toe for any size with recursion',
-  code:
-`const checkForWinner = (size, board) => {
+  code: `const checkForWinner = (size, board) => {
   if (!board) { board = Array.from(Array(size).keys()) }
   const winner = []
   const boardSize = Math.sqrt(board.length) | 0
@@ -25,5 +23,5 @@ export const codeTicTacToe =
 
   checkLine(4)
   return winner[0]
-}`
-}
+}`,
+};

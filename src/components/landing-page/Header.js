@@ -8,19 +8,19 @@ const Header = () => {
     { href: 'about-me', text: 'About Me' },
     { href: 'skills', text: 'Skills' },
     { href: 'projects', text: 'Projects' },
-    { href: 'contact', text: 'Contact' }
+    { href: 'contact', text: 'Contact' },
   ];
 
   const scrollTo = element => {
     if (element === '#top') {
       return $('html,body').animate(
         { scrollTop: $(`${element}`).offset().top },
-        500
+        500,
       );
     }
     $('html,body').animate(
       { scrollTop: $(`${element}`).offset().top + 1 },
-      500
+      500,
     );
   };
   const handleClick = () => scrollTo(event.target.getAttribute('href'));

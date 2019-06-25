@@ -1,80 +1,80 @@
 export const languages = [
   {
     icon: 'devicon-javascript-plain colored',
-    value: 'JavaScript'
+    value: 'JavaScript',
   },
   {
     icon: 'devicon-html5-plain colored',
-    value: 'HTML'
+    value: 'HTML',
   },
   {
     icon: 'devicon-css3-plain colored',
-    value: 'CSS'
+    value: 'CSS',
   },
   {
     icon: 'devicon-ruby-plain colored',
-    value: 'Ruby'
+    value: 'Ruby',
   },
   {
     icon: 'devicon-python-plain colored',
-    value: 'Python'
+    value: 'Python',
   },
   {
     icon: 'devicon-java-plain colored',
-    value: 'Java'
-  }
-]
+    value: 'Java',
+  },
+];
 
 export const skills = [
   {
     icon: 'devicon-react-original colored',
-    value: 'React.js'
+    value: 'React.js',
   },
   {
     icon: 'devicon-rails-plain colored',
-    value: 'Ruby on Rails'
+    value: 'Ruby on Rails',
   },
   {
     icon: 'devicon-express-original colore',
-    value: 'Express.js'
+    value: 'Express.js',
   },
   {
     icon: 'devicon-jquery-plain colored',
-    value: 'jQuery'
+    value: 'jQuery',
   },
   {
     icon: 'devicon-bootstrap-plain colored',
-    value: 'Bootstrap'
+    value: 'Bootstrap',
   },
   {
     icon: 'devicon-nodejs-plain colored',
-    value: 'Node.js'
-  }
-]
+    value: 'Node.js',
+  },
+];
 
 export const technologies = [
   {
     icon: 'devicon-github-plain colored',
-    value: 'Github'
+    value: 'Github',
   },
   {
     icon: 'devicon-heroku-plain colored',
-    value: 'Heroku'
+    value: 'Heroku',
   },
   {
     icon: 'devicon-amazonwebservices-original colore',
-    value: 'Amazon Web Services'
+    value: 'Amazon Web Services',
   },
   {
     icon: 'devicon-vim-plain colored',
-    value: 'Vim'
+    value: 'Vim',
   },
   {
     icon: 'devicon-atom-plain colored',
-    value: 'Atom'
+    value: 'Atom',
   },
   {
     icon: 'devicon-visualstudio-plain colored',
-    value: 'VSCode'
-  }
-]
+    value: 'VSCode',
+  },
+];
