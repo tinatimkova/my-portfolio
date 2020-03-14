@@ -22,9 +22,7 @@ class Skills extends Component {
         <h4 className="section-title">Skills</h4>
         <div className="skills-sub-section">{this.renderIcons(languages)}</div>
         <div className="skills-sub-section">{this.renderIcons(skills)}</div>
-        <div className="skills-sub-section">
-          {this.renderIcons(technologies)}
-        </div>
+        <div className="skills-sub-section">{this.renderIcons(technologies)}</div>
       </div>
     );
   }

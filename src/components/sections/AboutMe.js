@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import src from '../../images/selfie.webp';
+import src from '../../images/ProfilePic.JPG';
 
 class AboutMe extends Component {
   render () {
@@ -9,14 +9,14 @@ class AboutMe extends Component {
       <div id="about-me" className="section">
         <h1 className="section-title">About Me</h1>
         <div className="about-me-sub-section">
-          <div className="col-12 col-sm-8">
+          <div className="col-12 col-md-6">
             {text.split('\n').map((paragraph, index) => (
               <p key={index} className="mb-4">
                 {paragraph}
               </p>
             ))}
           </div>
-          <div className="col-12 col-sm-4">
+          <div className="col-12 col-md-6">
             <img src={src} alt="" className="selfie" />
           </div>
         </div>

@@ -5,7 +5,7 @@ export const languages = [
   },
   {
     icon: 'devicon-html5-plain colored',
-    value: 'HTML',
+    value: 'HTML5',
   },
   {
     icon: 'devicon-css3-plain colored',
@@ -20,8 +20,8 @@ export const languages = [
     value: 'Python',
   },
   {
-    icon: 'devicon-java-plain colored',
-    value: 'Java',
+    icon: 'devicon-nodejs-plain colored',
+    value: 'Node.js',
   },
 ];
 
@@ -47,8 +47,8 @@ export const skills = [
     value: 'Bootstrap',
   },
   {
-    icon: 'devicon-nodejs-plain colored',
-    value: 'Node.js',
+    icon: '',
+    value: 'Handlebars',
   },
 ];
 
@@ -62,19 +62,19 @@ export const technologies = [
     value: 'Heroku',
   },
   {
-    icon: 'devicon-amazonwebservices-original colored',
-    value: 'Amazon Web Services',
+    icon: 'devicon-mongodb-plain colored',
+    value: 'MongoDB',
   },
   {
-    icon: 'devicon-vim-plain colored',
-    value: 'Vim',
+    icon: 'devicon-postgresql-plain colored',
+    value: 'PostgreSQL',
   },
   {
     icon: 'devicon-atom-plain colored',
     value: 'Atom',
   },
   {
-    icon: 'devicon-visualstudio-plain colored',
-    value: 'VSCode',
+    icon: 'devicon-pycharm-plain colored',
+    value: 'Pycharm',
   },
 ];

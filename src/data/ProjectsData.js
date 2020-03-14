@@ -20,12 +20,11 @@ export const projects = [
   //   ]
   // },
   {
-    title: 'CSS Heavy Portfolio',
-    focus: 'CSS Animations, Bootstrap Components, and Styling',
+    title: 'Tic-Tac-Toe',
+    focus: 'SPA, Game Logic',
     deployed: 'https://davidholyko.github.io/davidholyko.github.io-deprecated',
     repo: 'https://github.com/davidholyko/davidholyko.github.io-deprecated',
     video: video1,
-    tags: 'Animations, Handlebars.js, Moment.js, Prism.js',
     description: [
       'Front End Application made from scratch',
       'Utilizes Bootstrap Carousel, Tooltip, Card, Collapse, Modal',
@@ -34,12 +33,11 @@ export const projects = [
     ],
   },
   {
-    title: 'LetterBox: A text-only social media platform for cat lovers',
-    focus: 'Teamwork and Collaboration',
+    title: 'My Dining List',
+    focus: 'Ruby on Rails',
     deployed: 'https://m-d-h-s.github.io/mdhs-blog-frontend',
     repo: 'https://github.com/m-d-h-s/mdhs-blog-frontend',
     video: video4,
-    tags: 'Express.js, Handlebars.js, Agile, MongoDB, Responsive-Design',
     description: [
       'Full Stack Application inspired by Reddit',
       'Project sprint duration: 3 business days',
@@ -49,13 +47,11 @@ export const projects = [
     ],
   },
   {
-    title: 'Brain Age: Train Your Brain in Minutes a Day!',
-    focus: 'Front End Features',
+    title: 'Survey',
+    focus: 'Teamwork and Collaboration',
     deployed: 'https://davidholyko.github.io/dko-brain-age-front-end',
     repo: 'https://github.com/davidholyko/dko-brain-age-front-end',
     video: video2,
-    tags:
-      'Algorithms, Ruby on Rails, PostgreSQL, Graph.js, Handlebars.js, Animations',
     description: [
       'Full Stack Application inspired by Brain Age for the Nintendo DS',
       'Project sprint duration: 4 business days',
@@ -65,12 +61,11 @@ export const projects = [
     ],
   },
   {
-    title: 'StackOverKo',
-    focus: 'Back End Features',
+    title: 'ExpTracker',
+    focus: 'React.js',
     deployed: 'https://davidholyko.github.io/dko-stackoverko-client',
     repo: 'https://github.com/davidholyko/dko-stackoverko-client',
     video: video3,
-    tags: 'React.js, Ruby on Rails',
     description: [
       'Full Stack Web Application inspired by Stackoverflow',
       'Project sprint duration: 4 business days',

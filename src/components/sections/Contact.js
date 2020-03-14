@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Resume from './Resume';
+// import Resume from './Resume';
 import { icons } from '../../data/ContactData';
 
 class Contact extends Component {
@@ -16,14 +16,13 @@ class Contact extends Component {
   );
 
   render () {
-    const text = `Need help on a project? Looking for a new hire? Send me a message or email!
-    I'd love to hear from you!`;
+    const text = 'Thank you for visiting my site. Please see further contact info below, and feel free to reach out!';
 
     return (
       <div id="contact" className="section">
         <div className="full-page">
           <h1 className="section-title mb-0">Contact Me</h1>
-          <Resume />
+          {/* <Resume /> */}
           <div className="full-page-sub-section">
             <h5 className="text-center break my-5">{text}</h5>
             <div

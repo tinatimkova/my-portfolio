@@ -2,13 +2,13 @@ import React, { Fragment } from 'react';
 import Video from './Video';
 
 export const Project = ({ project }) => {
-  const { focus, title, tags, deployed, repo, description, video } = project;
+  const { focus, title, deployed, repo, description, video } = project;
 
-  const renderTags = tags.split(',').map((tag, index) => (
-    <p key={index} className="bg-dark text-light mr-1 px-2 py-1 rounded">
-      {tag}
-    </p>
-  ));
+  // const renderTags = tags.split(',').map((tag, index) => (
+  //   <p key={index} className="bg-dark text-light mr-1 px-2 py-1 rounded">
+  //     {tag}
+  //   </p>
+  // ));
 
   const renderDescription = description.map((item, index) => (
     <li key={index} className="mb-1">
@@ -54,7 +54,7 @@ export const Project = ({ project }) => {
 
       <div className="project-info">
         <div className="project-description">
-          <div className="d-flex flex-wrap">{renderTags}</div>
+          {/* <div className="d-flex flex-wrap">{renderTags}</div> */}
           <ul>{renderDescription}</ul>
         </div>
 
