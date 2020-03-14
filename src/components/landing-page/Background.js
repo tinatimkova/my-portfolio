@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import BackgroundTextOverlay from './BackgroundTextOverlay';
-import BackgroundIconOverlay from './BackgroundIconOverlay';
-import src from '../../images/background.webp';
+import image from '../../images/portfolioBackground.png';
 
 class Background extends Component {
   render () {
     return (
       <div id="top" className="position-relative">
-        <img src={src} alt="" className="background" />
+        <img src={image} alt="" className="background" />
         <BackgroundTextOverlay />
-        <BackgroundIconOverlay />
       </div>
     );
   }

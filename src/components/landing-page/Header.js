@@ -4,11 +4,11 @@ import $ from 'jquery';
 
 const Header = () => {
   const sections = [
-    { href: 'top', text: 'David Ko' },
+    { href: 'top', text: 'Kristina Timkova' },
     { href: 'about-me', text: 'About Me' },
     { href: 'skills', text: 'Skills' },
     { href: 'projects', text: 'Projects' },
-    { href: 'contact', text: 'Contact' },
+    { href: 'contact', text: 'Contacts' },
   ];
 
   const scrollTo = element => {
