@@ -5,9 +5,9 @@ import github from '../images/icons/github.png';
 export const icons = [
   {
     href:
-      'https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=david.holy.ko@gmail.com',
+      'tinaatimkovaa@gmail.com',
     src: gmail,
   },
-  { href: 'https://github.com/davidholyko', src: github },
-  { href: 'https://www.linkedin.com/in/davidhko1', src: linkedin },
+  { href: 'https://github.com/tinatimkova', src: github },
+  { href: 'https://www.linkedin.com/in/kristina-timkova/', src: linkedin },
 ];

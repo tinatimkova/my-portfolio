@@ -27,7 +27,7 @@ class Contact extends Component {
             <h5 className="text-center break my-5">{text}</h5>
             <div
               id="contact-me-icons"
-              className="d-flex justify-content-around my-5"
+              className="d-flex justify-content-around"
             >
               {icons.map(this.renderIcons)}
             </div>
