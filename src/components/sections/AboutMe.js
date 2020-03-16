@@ -3,7 +3,7 @@ import src from '../../images/ProfilePic.JPG';
 
 class AboutMe extends Component {
   render () {
-    const text = 'My text about me';
+    const text = 'I’m a full stack developer with experience primarily in JavaScript although Ruby and Python are also in my field of interest. I want to be a junior developer at a company where I can learn, grow, and continue to master my programming skills.';
 
     return (
       <div id="about-me" className="section">
@@ -11,9 +11,9 @@ class AboutMe extends Component {
         <div className="about-me-sub-section">
           <div className="col-12 col-md-6">
             {text.split('\n').map((paragraph, index) => (
-              <p key={index} className="mb-4">
+              <h5 key={index} className="mb-4">
                 {paragraph}
-              </p>
+              </h5>
             ))}
           </div>
           <div className="col-12 col-md-6">

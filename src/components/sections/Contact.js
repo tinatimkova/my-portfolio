@@ -22,7 +22,6 @@ class Contact extends Component {
       <div id="contact" className="section">
         <div className="full-page">
           <h1 className="section-title mb-0">Contact Me</h1>
-          {/* <Resume /> */}
           <div className="full-page-sub-section">
             <h5 className="text-center break my-5">{text}</h5>
             <div

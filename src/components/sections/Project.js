@@ -44,16 +44,13 @@ export const Project = ({ project }) => {
 
   return (
     <div className="project animated fadeIn" key={title + deployed}>
-      <div className="d-flex">
-        <h3 className="project-header mt-1 font-weight-bold pr-2">{title}</h3>
-      </div>
-      <h5>
-        <span>Focused on: </span>
-        <span className="font-italic">{focus}</span>
-      </h5>
-
+      <h3 className="project-header mt-1 font-weight-bold pr-2">{title}</h3>
       <div className="project-info">
         <div className="project-description">
+          <h5>
+            <span className="font-italic">Focused on </span>
+            <span className="font-italic">{focus}</span>
+          </h5>
           {/* <div className="d-flex flex-wrap">{renderTags}</div> */}
           <ul>{renderDescription}</ul>
         </div>
