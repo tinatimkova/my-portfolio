@@ -47,8 +47,8 @@ export const skills = [
     value: 'Bootstrap',
   },
   {
-    icon: '',
-    value: 'Handlebars',
+    icon: 'devicon-grunt-plain colored',
+    value: 'Grunt',
   },
 ];
 

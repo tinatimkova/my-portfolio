@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Resume from './Resume';
 import { icons } from '../../data/ContactData';
 
 class Contact extends Component {

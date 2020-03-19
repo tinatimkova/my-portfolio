@@ -36,7 +36,7 @@ export const Project = ({ project }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className="text-light">Deployment</span>
+          <span className="text-light">Website</span>
         </a>
       </button>
     </Fragment>
@@ -44,9 +44,9 @@ export const Project = ({ project }) => {
 
   return (
     <div className="project animated fadeIn" key={title + deployed}>
-      <h3 className="project-header mt-1 font-weight-bold pr-2">{title}</h3>
       <div className="project-info">
         <div className="project-description">
+          <h3 className="project-header mt-1 font-weight-bold pr-2">{title}</h3>
           <h5>
             <span className="font-italic">Focused on </span>
             <span className="font-italic">{focus}</span>

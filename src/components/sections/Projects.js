@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Project } from './Project';
 import { projects } from '../../data/ProjectsData';
-import Pdf from '../../images/Resume Sample.svg';
 
 class Projects extends Component {
   constructor () {
@@ -59,7 +58,6 @@ class Projects extends Component {
           {focusedTag
             ? this.filterProjects(projects)
             : this.allProjects(projects)}
-          <button className='btn-green'><a href={Pdf} target = "_blank" rel='noopener noreferrer'>My Resume</a></button>
         </div>
       );
     }

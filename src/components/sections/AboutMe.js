@@ -9,14 +9,14 @@ class AboutMe extends Component {
       <div id="about-me" className="section">
         <h1 className="section-title">About Me</h1>
         <div className="about-me-sub-section">
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-7">
             {text.split('\n').map((paragraph, index) => (
               <h5 key={index} className="mb-4">
                 {paragraph}
               </h5>
             ))}
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-5">
             <img src={src} alt="" className="selfie" />
           </div>
         </div>
