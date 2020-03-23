@@ -22,7 +22,7 @@ class Contact extends Component {
         <div className="full-page">
           <h1 className="section-title mb-0">Contact Me</h1>
           <div className="full-page-sub-section">
-            <h3 className="text-center break my-5">{text}</h3>
+            <h5 className="text-center break my-5">{text}</h5>
             <div
               id="contact-me-icons"
               className="d-flex justify-content-around"
