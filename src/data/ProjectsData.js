@@ -3,8 +3,21 @@ import video1 from '../videos/video-1.webm';
 import video2 from '../videos/video-2.webm';
 import video3 from '../videos/video-3.webm';
 import video4 from '../videos/video-4.webm';
+import video5 from '../videos/video-5.webm';
 
 export const projects = [
+  {
+    title: 'Fyyur',
+    focus: 'Web API with Python and Flask',
+    deployed: 'https://evening-inlet-65278.herokuapp.com/',
+    repo: 'https://github.com/tinatimkova/fyyur-flask-api',
+    video: video5,
+    description: [
+      'Fyyur is a platform where artists and musical venues can find each other',
+      'Built out the data models and model interactions to be able to store, retrieve and update data from a PostgreSQL database',
+      'used Python3, Flask, SQLAlchemy, PostgreSQL, Jinja2',
+    ],
+  },
   {
     title: 'ExpTracker',
     focus: 'React.js',
