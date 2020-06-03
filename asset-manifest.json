@@ -1,15 +1,16 @@
 {
   "main.css": "static/css/main.9bc1832f.css",
   "main.css.map": "static/css/main.9bc1832f.css.map",
-  "main.js": "static/js/main.1c6bf7c8.js",
-  "main.js.map": "static/js/main.1c6bf7c8.js.map",
+  "main.js": "static/js/main.4a1679e0.js",
+  "main.js.map": "static/js/main.4a1679e0.js.map",
   "static/media/ProfilePic.JPG": "static/media/ProfilePic.645f6e61.JPG",
-  "static/media/ResumeSample.pdf": "static/media/ResumeSample.5369b565.pdf",
+  "static/media/ResumeSample.pdf": "static/media/ResumeSample.fe5a63f8.pdf",
   "static/media/github.png": "static/media/github.1dca1c61.png",
   "static/media/portfolioBackground.png": "static/media/portfolioBackground.24e62cb4.png",
   "static/media/resume.png": "static/media/resume.e4e51acf.png",
   "static/media/video-1.webm": "static/media/video-1.26c7d5e3.webm",
   "static/media/video-2.webm": "static/media/video-2.5168be66.webm",
   "static/media/video-3.webm": "static/media/video-3.342d6d09.webm",
-  "static/media/video-4.webm": "static/media/video-4.c49c26cf.webm"
+  "static/media/video-4.webm": "static/media/video-4.c49c26cf.webm",
+  "static/media/video-5.webm": "static/media/video-5.d1109356.webm"
 }
