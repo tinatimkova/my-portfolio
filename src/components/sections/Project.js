@@ -18,18 +18,16 @@ export const Project = ({ project }) => {
 
   const renderButtons = (
     <Fragment>
-      <button className="btn-green mr-2">
+      <button className="btn mr-2">
         <a
           className="no-decoration"
           href={repo}
           target="_blank"
           rel="noopener noreferrer"
-        >
-          <span className="text-light">Codebase</span>
-        </a>
+        >Codebase</a>
       </button>
 
-      <button className="btn-green ml-2">
+      <button className="btn ml-2">
         <a
           className="no-decoration"
           href={deployed}

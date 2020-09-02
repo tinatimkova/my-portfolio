@@ -23,7 +23,7 @@
   }
 }
 
-.btn-green {
+button.btn {
   color: white;
   background-color: #563d7c;
   border-radius: 0.25rem;
@@ -32,11 +32,12 @@
   margin: 0.5rem auto;
   outline: none;
   border: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
 
-  &:hover {
-    color: white;
-    background-color: #563d7c;
-  }
+button.btn:hover {
+    transform: translate(1px, -1px);
+    transition: all .1s linear .1s;
 }
 
 .btn-tag-active {
