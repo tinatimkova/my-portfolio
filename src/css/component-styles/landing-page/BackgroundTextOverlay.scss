@@ -13,9 +13,22 @@
 .text-large {
   font-size: 5rem;
   text-shadow: 5px 2px 2px #563d7c;
+  opacity: 0;
+  animation: 1s slidefade .5s forwards;
+  margin-top: 100px;
 }
 
 .text-medium {
   font-size: 3rem;
   text-shadow: 5px 2px 2px #563d7c;
+  opacity: 0;
+  animation: 2s slidefade 1s forwards;
+  margin-top: 100px;
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
 }

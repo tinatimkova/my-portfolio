@@ -23,6 +23,8 @@
   color: white;
   margin: 0;
   padding: 0 1.5rem;
+  opacity: 0;
+  animation: 1s fadein .5s forwards;
 
   &.undefined:hover {
     cursor: pointer;
@@ -35,4 +37,10 @@
   color: #EEE;
   margin: 0;
   padding: 0 1.5rem;
+}
+
+@keyframes fadein {
+  100% {
+    opacity: .9;
+  }
 }
