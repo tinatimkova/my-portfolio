@@ -4,8 +4,21 @@ import video2 from '../videos/video-2.webm';
 import video3 from '../videos/video-3.webm';
 import video4 from '../videos/video-4.webm';
 import video5 from '../videos/video-5.webm';
+import video6 from '../videos/video-6.webm';
 
 export const projects = [
+  {
+    title: 'Cakes, Treats & Crafts',
+    focus: 'MERN',
+    deployed: '',
+    repo: '',
+    video: video6,
+    description: [
+      'E-commerce website for a bakery shop',
+      'collaborated with UX designers and other developers in an agile team',
+      'used MongoDB, Express.js, React.js, Node.js, AWS',
+    ],
+  },
   {
     title: 'Fyyur',
     focus: 'Web API with Python and Flask',
@@ -14,7 +27,7 @@ export const projects = [
     video: video5,
     description: [
       'Fyyur is a platform where artists and musical venues can find each other',
-      'Built out the data models and model interactions to be able to store, retrieve and update data from a PostgreSQL database',
+      'built out the data models and model interactions to be able to store, retrieve and update data from a PostgreSQL database',
       'used Python3, Flask, SQLAlchemy, PostgreSQL, Jinja2',
     ],
   },

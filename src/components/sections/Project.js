@@ -17,7 +17,7 @@ export const Project = ({ project }) => {
   ));
 
   const renderButtons = (
-    <Fragment>
+    (repo && deployed !== '') ? <Fragment>
       <button className="btn mr-2">
         <a
           className="no-decoration"
@@ -37,7 +37,7 @@ export const Project = ({ project }) => {
           <span className="text-light">Website</span>
         </a>
       </button>
-    </Fragment>
+    </Fragment> : ''
   );
 
   return (

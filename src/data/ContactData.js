@@ -1,7 +1,7 @@
 import resume from '../images/icons/resume.png';
 import linkedin from '../images/icons/linkedin.png';
 import github from '../images/icons/github.png';
-import pdf from './ResumeSample.pdf';
+import pdf from './ResumeSample.xps';
 
 export const icons = [
   { href: pdf,
