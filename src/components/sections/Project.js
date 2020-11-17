@@ -17,8 +17,8 @@ export const Project = ({ project }) => {
   ));
 
   const renderButtons = (
-    (repo && deployed !== '') ? <Fragment>
-      <button className="btn mr-2">
+    <Fragment>
+      <button className={`btn mr-2 ${repo !== '' ? '' : 'disabled'}`}>
         <a
           className="no-decoration"
           href={repo}
@@ -37,7 +37,7 @@ export const Project = ({ project }) => {
           <span className="text-light">Website</span>
         </a>
       </button>
-    </Fragment> : ''
+    </Fragment>
   );
 
   return (

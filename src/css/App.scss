@@ -112,3 +112,7 @@ button.btn:hover {
 a {
   color: white !important;
 }
+
+.btn.disabled {
+  visibility: hidden;
+}
