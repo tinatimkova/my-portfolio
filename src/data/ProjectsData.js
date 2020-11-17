@@ -10,7 +10,7 @@ export const projects = [
   {
     title: 'Cakes, Treats & Crafts',
     focus: 'MERN',
-    deployed: '',
+    deployed: 'https://cakestreatscrafts.com/#/',
     repo: '',
     video: video6,
     description: [
