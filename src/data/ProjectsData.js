@@ -65,7 +65,7 @@ export const projects = [
       'built an app to help users search for their favorite movies and add them to the nomination list',
       'implemented Context to share data between React components',
       'used React, a third party API',
-    ]
+    ],
   },
   {
     title: 'My Dining List',

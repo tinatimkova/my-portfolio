@@ -32,7 +32,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "build": "react-scripts build",
     "test": "node scripts/test.js --env=jsdom",
     "make-standard": "eslint --fix ./src;exit 0",
     "nag": "eslint ./src;exit 0",
