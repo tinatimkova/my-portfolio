@@ -1,7 +1,7 @@
 // import video0 from '../videos/video-0.webm'
 import video1 from '../videos/video-1.webm';
 import video2 from '../videos/video-2.webm';
-import video3 from '../videos/video-3.webm';
+import video7 from '../videos/video-7.webm';
 import video4 from '../videos/video-4.webm';
 import video5 from '../videos/video-5.webm';
 import video6 from '../videos/video-6.webm';
@@ -43,17 +43,29 @@ export const projects = [
       'used React, JSX, Bootstrap, Ruby on Rails',
     ],
   },
+  // {
+  //   title: 'Survey Builder',
+  //   focus: 'Teamwork and Collaboration',
+  //   deployed: 'https://team-grilled-cheese.github.io/front-end/',
+  //   repo: 'https://github.com/team-grilled-cheese/front-end',
+  //   video: video3,
+  //   description: [
+  //     'collaborated with three web-developers to create an app utilizing agile scrum methodology',
+  //     'built an application that allows users to create custom surveys and collect responses',
+  //     'used JavaScript, jQuery, HTML, Bootstrap, Express, MongoDB, GitHub project board',
+  //   ],
+  // },
   {
-    title: 'Survey Builder',
-    focus: 'Teamwork and Collaboration',
-    deployed: 'https://team-grilled-cheese.github.io/front-end/',
-    repo: 'https://github.com/team-grilled-cheese/front-end',
-    video: video3,
+    title: 'The Shoppies',
+    focus: 'React Context API',
+    deployed: 'https://tinatimkova.github.io/movie-challenge/',
+    repo: 'https://github.com/tinatimkova/movie-challenge',
+    video: video7,
     description: [
-      'collaborated with three web-developers to create an app utilizing agile scrum methodology',
-      'built an application that allows users to create custom surveys and collect responses',
-      'used JavaScript, jQuery, HTML, Bootstrap, Express, MongoDB, GitHub project board',
-    ],
+      'built an app to help users search for their favorite movies and add them to the nomination list',
+      'implemented Context to share data between React components',
+      'used React, a third party API',
+    ]
   },
   {
     title: 'My Dining List',
